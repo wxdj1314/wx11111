@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+</head>
+<body>
+<div ng-controller="MyCtrl">
+    <button ng-keydown="num=num+1">点击加一</button>
+    <!--<p>结果是：{{num}}</p>-->
+    <p ng-bind="num"></p>
+</div>
+<script src="angular-1.3.0.js"></script>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("MyCtrl",function ($scope) {
+        $scope.num=0;
+    })
+</script>
+</body>
+</html>

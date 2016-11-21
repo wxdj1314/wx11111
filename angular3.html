@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>angular3</title>
+</head>
+<body>
+<div ng-controller="CommonCtrl">
+    <div ng-controller="MyCtrl1">  <!-- 控制器 -->
+        <p>hello,{{name}}</p> <!-- 视图 -->
+        <p>{{name}}的年龄：{{age}}</p>
+        <p>擅长：{{good}}{{'5'+5}}</p>
+        <button ng-click="work()">工作</button>
+        <button ng-click="CommonFn()">共同</button>
+    </div>
+    <p>hello,{{name}}</p>
+    <button ng-click="CommonFn()">共同</button>
+    <div ng-controller="MyCtrl2">
+        <p>{{name}}的年龄：{{age}}</p>
+        <p>擅长：{{good}}</p>
+    </div>
+    <div ng-controller="MyCtrl3">
+        <p>大家好，我是{{fullname()}}</p>
+    </div>
+</div>
+<script src="angular-1.3.0.js"></script>
+<!--<script src="angular3.js"></script>-->
+<script src="angular3-3.js"></script>
+<script>
+
+</script>
+</body>
+</html>
